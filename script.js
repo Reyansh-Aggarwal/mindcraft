@@ -61,11 +61,14 @@ function nextQ(){
     //SAVING ANSWER ----
     answer[qNum] = ans.value;
 
+    ans.style.outlineColor = 'red';
     //calculating score
     if (answer[qNum] == corrAns[qNum]){
         
-        //RESETTING VALUE OF TEXTBOX ---- 
+        //RESETTING VALUE OF TEXTBOX AND COLOR---- 
         ans.value = "";
+        ans.style.outlineColor = "#222";
+
         //ADDING TO TOTAL NO. OF QUESTIONS AND SCORE----
         qNum++;
         score++;
@@ -73,8 +76,8 @@ function nextQ(){
         //CHANGING QUESTION TEXT AND IMAGE------
         img.src = image[qNum];
         quesTxt.innerText = (qNum+1) + "." + " " + question[qNum];
-
-    }
+    } 
+        
 
     //ENDING
     if (qNum > totalQ - 1){
