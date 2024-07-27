@@ -13,7 +13,7 @@ function nextQ(){
     const quesTxt = document.getElementById('question');
     const ans = document.getElementById("answer");
     const qnaScr = document.getElementById('qnaScr');
-    const scoreBoard = document.getElementById('scoreBoard');
+    const endScr = document.getElementById('endScr');
     const scoreTxt = document.getElementById('score');
     const img = document.getElementById('qImg');
 
@@ -81,12 +81,8 @@ function nextQ(){
 
     //ENDING
     if (qNum > totalQ - 1){
-        
-        //displaying score
-        scoreTxt.innerText = score + "/" + totalQ;
-
-        //making score board visible
+        //making end screen visible
         qnaScr.style.visibility = "hidden";
-        scoreBoard.style.visibility = "visible";        
+        endScr.style.visibility = "visible";        
     }
 }
