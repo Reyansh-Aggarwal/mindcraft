@@ -46,8 +46,8 @@ function nextQ(){
 
     corrAns = [
         'George Stafford',
-        'Im not sure',
-        'Im not sure',
+        '3.47',
+        'Phacidiaceae',
         'Livonian War',
         'Sirius Black',
         'Fat Man',
